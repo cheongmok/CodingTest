@@ -52,7 +52,10 @@ public class SWEA1493 {
 		// 넘어온 num 값이 1~n 까지의 합보다 작을때 까지 while 루프를 돈다.
 		int checkNum = 1;
 		int currentX = 1;
-		while (num >= checkNum) {
+		// >= 30개 틀림 why?
+		// >= 이면 다음 칸으로 넘어가버린다!!!
+		// > 로 막아야함 ㅠㅠ
+		while (num > checkNum) {
 			// 현재 확인용 x를 1 늘려주고
 			currentX++;
 			// 확인할 번호는 x값을 더해준다.
